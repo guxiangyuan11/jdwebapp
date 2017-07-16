@@ -1,0 +1,39 @@
+*,
+::before,
+::after{
+    font-size: 14px;
+    margin: 0;
+    padding:0;
+    -webkit-tap-highlight-color:transparent;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Microsoft Sans Serif";
+}
+input{
+    border: none;
+    /*去除浏览器默认样式*/
+    -webkit-appearance: none;
+}
+a{
+    text-decoration: none;
+}
+ol,ul{
+    list-style: none;
+}
+/*设置浮动*/
+.f_l{
+    float: left;
+}
+.f_r{
+    folat:right;
+}
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after{
+    content: "";
+    display: block;
+    line-height: 0;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
